@@ -10,7 +10,11 @@ Spi::Spi(SpiMaster& spiMaster, uint8_t pinCsn) : spiMaster {spiMaster}, pinCsn {
 }
 
 bool Spi::Write(const uint8_t* data, size_t size) {
+#ifdef IN_THE_SIM
+  return spiMaster.Write(pinCsn, data, size, NULL);
+#else
   return spiMaster.Write(pinCsn, data, size);
+#endif
 }
 
 bool Spi::Read(uint8_t* cmd, size_t cmdSize, uint8_t* data, size_t dataSize) {
