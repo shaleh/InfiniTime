@@ -1,17 +1,19 @@
-#pragma once
+#if 0
 
-#include <lvgl/src/lv_core/lv_obj.h>
-#include <chrono>
-#include <cstdint>
-#include <memory>
-#include <displayapp/Controllers.h>
-#include "displayapp/screens/Screen.h"
-#include "displayapp/screens/BatteryIcon.h"
-#include "displayapp/Colors.h"
-#include "components/datetime/DateTimeController.h"
-#include "components/ble/SimpleWeatherService.h"
-#include "components/ble/BleController.h"
-#include "utility/DirtyValue.h"
+  #pragma once
+
+  #include <lvgl/src/lv_core/lv_obj.h>
+  #include <chrono>
+  #include <cstdint>
+  #include <memory>
+  #include <displayapp/Controllers.h>
+  #include "displayapp/screens/Screen.h"
+  #include "displayapp/screens/BatteryIcon.h"
+  #include "displayapp/Colors.h"
+  #include "components/datetime/DateTimeController.h"
+  #include "components/ble/SimpleWeatherService.h"
+  #include "components/ble/BleController.h"
+  #include "utility/DirtyValue.h"
 
 namespace Pinetime {
   namespace Controllers {
@@ -142,3 +144,5 @@ namespace Pinetime {
     };
   }
 }
+
+#endif

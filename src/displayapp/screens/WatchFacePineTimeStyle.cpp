@@ -1,3 +1,5 @@
+#if 0
+
 /*
  * This file is part of the Infinitime distribution (https://github.com/InfiniTimeOrg/Infinitime).
  * Copyright (c) 2021 Kieran Cawthray.
@@ -19,22 +21,22 @@
  * Style/layout copied from TimeStyle for Pebble by Dan Tilden (github.com/tilden)
  */
 
-#include "displayapp/screens/WatchFacePineTimeStyle.h"
-#include <lvgl/lvgl.h>
-#include <cstdio>
-#include <displayapp/Colors.h>
-#include "displayapp/screens/BatteryIcon.h"
-#include "displayapp/screens/BleIcon.h"
-#include "displayapp/screens/NotificationIcon.h"
-#include "displayapp/screens/Symbols.h"
-#include "displayapp/screens/WeatherSymbols.h"
-#include "components/battery/BatteryController.h"
-#include "components/ble/BleController.h"
-#include "components/ble/NotificationManager.h"
-#include "components/motion/MotionController.h"
-#include "components/settings/Settings.h"
-#include "displayapp/DisplayApp.h"
-#include "components/ble/SimpleWeatherService.h"
+  #include "displayapp/screens/WatchFacePineTimeStyle.h"
+  #include <lvgl/lvgl.h>
+  #include <cstdio>
+  #include <displayapp/Colors.h>
+  #include "displayapp/screens/BatteryIcon.h"
+  #include "displayapp/screens/BleIcon.h"
+  #include "displayapp/screens/NotificationIcon.h"
+  #include "displayapp/screens/Symbols.h"
+  #include "displayapp/screens/WeatherSymbols.h"
+  #include "components/battery/BatteryController.h"
+  #include "components/ble/BleController.h"
+  #include "components/ble/NotificationManager.h"
+  #include "components/motion/MotionController.h"
+  #include "components/settings/Settings.h"
+  #include "displayapp/DisplayApp.h"
+  #include "components/ble/SimpleWeatherService.h"
 
 using namespace Pinetime::Applications::Screens;
 
@@ -782,3 +784,5 @@ Pinetime::Controllers::Settings::Colors WatchFacePineTimeStyle::GetPrevious(Pine
   }
   return prevColor;
 }
+
+#endif
