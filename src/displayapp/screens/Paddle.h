@@ -1,11 +1,13 @@
-#pragma once
+#if 0
 
-#include <lvgl/lvgl.h>
-#include <cstdint>
-#include "displayapp/screens/Screen.h"
-#include "displayapp/apps/Apps.h"
-#include "displayapp/Controllers.h"
-#include "Symbols.h"
+  #pragma once
+
+  #include <lvgl/lvgl.h>
+  #include <cstdint>
+  #include "displayapp/screens/Screen.h"
+  #include "displayapp/apps/Apps.h"
+  #include "displayapp/Controllers.h"
+  #include "Symbols.h"
 
 namespace Pinetime {
   namespace Components {
@@ -60,3 +62,5 @@ namespace Pinetime {
     };
   }
 }
+
+#endif

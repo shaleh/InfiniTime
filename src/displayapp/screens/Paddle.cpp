@@ -1,8 +1,10 @@
-#include "displayapp/screens/Paddle.h"
-#include "displayapp/DisplayApp.h"
-#include "displayapp/LittleVgl.h"
+#if 0
 
-#include <cstdlib> // for rand()
+  #include "displayapp/screens/Paddle.h"
+  #include "displayapp/DisplayApp.h"
+  #include "displayapp/LittleVgl.h"
+
+  #include <cstdlib> // for rand()
 
 using namespace Pinetime::Applications::Screens;
 
@@ -96,3 +98,5 @@ bool Paddle::OnTouchEvent(uint16_t /*x*/, uint16_t y) {
   paddlePos = y;
   return true;
 }
+
+#endif
