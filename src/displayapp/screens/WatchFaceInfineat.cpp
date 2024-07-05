@@ -1,14 +1,16 @@
-#include "displayapp/screens/WatchFaceInfineat.h"
+#if 0
 
-#include <lvgl/lvgl.h>
-#include <cstdio>
-#include "displayapp/screens/Symbols.h"
-#include "displayapp/screens/BleIcon.h"
-#include "components/settings/Settings.h"
-#include "components/battery/BatteryController.h"
-#include "components/ble/BleController.h"
-#include "components/ble/NotificationManager.h"
-#include "components/motion/MotionController.h"
+  #include "displayapp/screens/WatchFaceInfineat.h"
+
+  #include <lvgl/lvgl.h>
+  #include <cstdio>
+  #include "displayapp/screens/Symbols.h"
+  #include "displayapp/screens/BleIcon.h"
+  #include "components/settings/Settings.h"
+  #include "components/battery/BatteryController.h"
+  #include "components/ble/BleController.h"
+  #include "components/ble/NotificationManager.h"
+  #include "components/motion/MotionController.h"
 
 using namespace Pinetime::Applications::Screens;
 
@@ -506,3 +508,5 @@ bool WatchFaceInfineat::IsAvailable(Pinetime::Controllers::FS& filesystem) {
   filesystem.FileClose(&file);
   return true;
 }
+
+#endif

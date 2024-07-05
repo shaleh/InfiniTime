@@ -1,14 +1,16 @@
-#include <lvgl/lvgl.h>
-#include "displayapp/screens/WatchFaceTerminal.h"
-#include "displayapp/screens/BatteryIcon.h"
-#include "displayapp/screens/NotificationIcon.h"
-#include "displayapp/screens/Symbols.h"
-#include "components/battery/BatteryController.h"
-#include "components/ble/BleController.h"
-#include "components/ble/NotificationManager.h"
-#include "components/heartrate/HeartRateController.h"
-#include "components/motion/MotionController.h"
-#include "components/settings/Settings.h"
+#if 0
+
+  #include <lvgl/lvgl.h>
+  #include "displayapp/screens/WatchFaceTerminal.h"
+  #include "displayapp/screens/BatteryIcon.h"
+  #include "displayapp/screens/NotificationIcon.h"
+  #include "displayapp/screens/Symbols.h"
+  #include "components/battery/BatteryController.h"
+  #include "components/ble/BleController.h"
+  #include "components/ble/NotificationManager.h"
+  #include "components/heartrate/HeartRateController.h"
+  #include "components/motion/MotionController.h"
+  #include "components/settings/Settings.h"
 
 using namespace Pinetime::Applications::Screens;
 
@@ -149,3 +151,5 @@ void WatchFaceTerminal::Refresh() {
     lv_label_set_text_fmt(stepValue, "[STEP]#ee3377 %lu steps#", stepCount.Get());
   }
 }
+
+#endif

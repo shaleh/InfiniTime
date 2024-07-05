@@ -1,14 +1,16 @@
-#pragma once
+#if 0
 
-#include <lvgl/lvgl.h>
-#include <chrono>
-#include <cstdint>
-#include <memory>
-#include <displayapp/Controllers.h>
-#include "displayapp/screens/Screen.h"
-#include "components/datetime/DateTimeController.h"
-#include "utility/DirtyValue.h"
-#include "displayapp/apps/Apps.h"
+  #pragma once
+
+  #include <lvgl/lvgl.h>
+  #include <chrono>
+  #include <cstdint>
+  #include <memory>
+  #include <displayapp/Controllers.h>
+  #include "displayapp/screens/Screen.h"
+  #include "components/datetime/DateTimeController.h"
+  #include "utility/DirtyValue.h"
+  #include "displayapp/apps/Apps.h"
 
 namespace Pinetime {
   namespace Controllers {
@@ -122,3 +124,5 @@ namespace Pinetime {
     };
   }
 }
+
+#endif

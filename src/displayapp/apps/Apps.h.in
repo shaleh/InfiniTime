@@ -43,8 +43,6 @@ namespace Pinetime {
 
     enum class WatchFace : uint8_t {
       Digital,
-      Terminal,
-      Infineat,
       CasioStyleG7710,
     };
 

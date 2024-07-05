@@ -45,11 +45,6 @@ namespace Pinetime {
         PTSWeather weatherEnable = PTSWeather::Off;
       };
 
-      struct WatchFaceInfineat {
-        bool showSideCover = true;
-        int colorIndex = 0;
-      };
-
       Settings(Pinetime::Controllers::FS& fs);
 
       Settings(const Settings&) = delete;
@@ -110,28 +105,6 @@ namespace Pinetime {
 
       Colors GetPTSColorBG() const {
         return settings.PTS.ColorBG;
-      };
-
-      void SetInfineatShowSideCover(bool show) {
-        if (show != settings.watchFaceInfineat.showSideCover) {
-          settings.watchFaceInfineat.showSideCover = show;
-          settingsChanged = true;
-        }
-      };
-
-      bool GetInfineatShowSideCover() const {
-        return settings.watchFaceInfineat.showSideCover;
-      };
-
-      void SetInfineatColorIndex(int index) {
-        if (index != settings.watchFaceInfineat.colorIndex) {
-          settings.watchFaceInfineat.colorIndex = index;
-          settingsChanged = true;
-        }
-      };
-
-      int GetInfineatColorIndex() const {
-        return settings.watchFaceInfineat.colorIndex;
       };
 
       void SetPTSGaugeStyle(PTSGaugeStyle gaugeStyle) {
@@ -301,8 +274,6 @@ namespace Pinetime {
         ChimesOption chimesOption = ChimesOption::None;
 
         PineTimeStyle PTS;
-
-        WatchFaceInfineat watchFaceInfineat;
 
         std::bitset<5> wakeUpMode {0};
         uint16_t shakeWakeThreshold = 150;
