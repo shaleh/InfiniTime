@@ -1,16 +1,18 @@
-#pragma once
+#if 0
 
-#include <lvgl/src/lv_core/lv_obj.h>
-#include <chrono>
-#include <cstdint>
-#include <memory>
-#include "displayapp/screens/Screen.h"
-#include "components/datetime/DateTimeController.h"
-#include "components/battery/BatteryController.h"
-#include "components/ble/BleController.h"
-#include "components/ble/NotificationManager.h"
-#include "displayapp/screens/BatteryIcon.h"
-#include "utility/DirtyValue.h"
+  #pragma once
+
+  #include <lvgl/src/lv_core/lv_obj.h>
+  #include <chrono>
+  #include <cstdint>
+  #include <memory>
+  #include "displayapp/screens/Screen.h"
+  #include "components/datetime/DateTimeController.h"
+  #include "components/battery/BatteryController.h"
+  #include "components/ble/BleController.h"
+  #include "components/ble/NotificationManager.h"
+  #include "displayapp/screens/BatteryIcon.h"
+  #include "utility/DirtyValue.h"
 
 namespace Pinetime {
   namespace Controllers {
@@ -108,3 +110,5 @@ namespace Pinetime {
     };
   }
 }
+
+#endif
