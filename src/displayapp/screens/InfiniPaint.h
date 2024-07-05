@@ -1,13 +1,15 @@
-#pragma once
+#if 0
 
-#include <lvgl/lvgl.h>
-#include <cstdint>
-#include <algorithm> // std::fill
-#include "displayapp/screens/Screen.h"
-#include "components/motor/MotorController.h"
-#include "Symbols.h"
-#include "displayapp/apps/Apps.h"
-#include <displayapp/Controllers.h>
+  #pragma once
+
+  #include <lvgl/lvgl.h>
+  #include <cstdint>
+  #include <algorithm> // std::fill
+  #include "displayapp/screens/Screen.h"
+  #include "components/motor/MotorController.h"
+  #include "Symbols.h"
+  #include "displayapp/apps/Apps.h"
+  #include <displayapp/Controllers.h>
 
 namespace Pinetime {
   namespace Components {
@@ -50,3 +52,5 @@ namespace Pinetime {
     };
   }
 }
+
+#endif

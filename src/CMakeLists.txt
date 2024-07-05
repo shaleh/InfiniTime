@@ -366,7 +366,6 @@ list(APPEND SOURCE_FILES
         displayapp/DisplayApp.cpp
         displayapp/screens/Screen.cpp
         displayapp/screens/Tile.cpp
-        displayapp/screens/InfiniPaint.cpp
         displayapp/screens/StopWatch.cpp
         displayapp/screens/BatteryIcon.cpp
         displayapp/screens/BleIcon.cpp
@@ -586,7 +585,6 @@ set(INCLUDE_FILES
         displayapp/TouchEvents.h
         displayapp/screens/Screen.h
         displayapp/screens/Tile.h
-        displayapp/screens/InfiniPaint.h
         displayapp/screens/StopWatch.h
         displayapp/screens/BatteryIcon.h
         displayapp/screens/BleIcon.h

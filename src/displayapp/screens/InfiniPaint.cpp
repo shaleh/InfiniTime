@@ -1,9 +1,11 @@
-#include "displayapp/screens/InfiniPaint.h"
-#include "displayapp/DisplayApp.h"
-#include "displayapp/LittleVgl.h"
-#include "displayapp/InfiniTimeTheme.h"
+#if 0
 
-#include <algorithm> // std::fill
+  #include "displayapp/screens/InfiniPaint.h"
+  #include "displayapp/DisplayApp.h"
+  #include "displayapp/LittleVgl.h"
+  #include "displayapp/InfiniTimeTheme.h"
+
+  #include <algorithm> // std::fill
 
 using namespace Pinetime::Applications::Screens;
 
@@ -70,3 +72,5 @@ bool InfiniPaint::OnTouchEvent(uint16_t x, uint16_t y) {
   lvgl.FlushDisplay(&area, b);
   return true;
 }
+
+#endif
