@@ -1,8 +1,8 @@
 #!/bin/bash
-if clang-format --version | grep -q 'version 11\.'; then
+if clang-format --version | grep -q 'version 15\.'; then
    CLANG_FORMAT_EXECUTABLE="clang-format"
 else
-   CLANG_FORMAT_EXECUTABLE="clang-format-11"
+   CLANG_FORMAT_EXECUTABLE="clang-format-15"
 fi
 
 if ! command -v $CLANG_FORMAT_EXECUTABLE &> /dev/null
