@@ -1,8 +1,10 @@
-#pragma once
+#if 0
 
-#include "displayapp/apps/Apps.h"
-#include "displayapp/screens/Screen.h"
-#include "displayapp/Controllers.h"
+  #pragma once
+
+  #include "displayapp/apps/Apps.h"
+  #include "displayapp/screens/Screen.h"
+  #include "displayapp/Controllers.h"
 
 namespace Pinetime {
   namespace Applications {
@@ -48,3 +50,5 @@ namespace Pinetime {
     };
   }
 }
+
+#endif

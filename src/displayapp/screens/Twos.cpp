@@ -1,7 +1,9 @@
-#include "displayapp/screens/Twos.h"
-#include <cstdio>
-#include <cstdlib>
-#include <lvgl/lvgl.h>
+#if 0
+
+  #include "displayapp/screens/Twos.h"
+  #include <cstdio>
+  #include <cstdlib>
+  #include <lvgl/lvgl.h>
 
 using namespace Pinetime::Applications::Screens;
 
@@ -269,3 +271,5 @@ void Twos::updateGridDisplay() {
     }
   }
 }
+
+#endif
